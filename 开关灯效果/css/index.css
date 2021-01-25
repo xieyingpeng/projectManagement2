@@ -1,0 +1,83 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+.btn {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    appearance: none;
+
+    outline: none;
+
+}
+
+.btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+
+    height: 80px;
+
+    background: #05c46b;
+
+    border-radius: 40px;
+
+    box-sizing: 0 3px #000;
+
+}
+
+.btn::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 2px;
+
+    left: 2px;
+
+    width: 76px;
+
+    height: 76px;
+
+    border-radius: 50%;
+
+    box-sizing: 0 3px gray;
+
+    background: white;
+
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* 当btn 被点击触发 */
+
+.btn:checked::before {
+
+    background: gray;
+
+}
+
+/* 当btn 被点击触发 */
+
+.btn:checked::after {
+
+    left: 72px;
+
+}

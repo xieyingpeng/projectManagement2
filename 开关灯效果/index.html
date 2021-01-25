@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+<input type="checkbox" name="" class="btn" id="">
+
+<script>
+
+    // 获取元素
+
+    var light = document.querySelector(".btn")
+
+    var flag = 0;
+
+    // 添加点击事件
+
+    light.onclick = function () {
+
+        if (flag == 0) {
+
+// 获取body 并且改变 背景颜色
+
+            document.body.style.backgroundColor = '#000'
+
+// 重新赋值 flag
+
+            flag = 1
+
+        } else {
+
+            document.body.style.backgroundColor = '#fff'
+
+            flag = 0
+
+        }
+
+    }
+
+</script>
+
+</body>
+
+</html>
